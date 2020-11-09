@@ -50,6 +50,16 @@ carouselSlide.addEventListener ('transitionend', ()=>{
     }
 })
 
+let btn = document.getElementById('toogle_btn')
+const navbar = document.querySelector('#navbar')
+
+
+btn.addEventListener("click", event=>{
+
+    navbar.classList.toggle("is-visible");
+
+})
+
 
 
 

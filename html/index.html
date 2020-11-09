@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
     <title>Acceuil</title>
 </head>
 <body>
@@ -20,6 +25,9 @@
                 <li><a href="#">Nos contacts</a></li>
             </ul>
         </div>
+        <div id="toogle_btn">
+            <span></span>
+        </div>
      
 
     </header>
@@ -27,8 +35,8 @@
     <section id="acceuil">
 
         <div class="item home-text">
-            <h3>Bienvenu</h3>
-            <h1>Lorem ipsum dolor sit amet </h1>
+            <h1>Bienvenue sur TECH</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
         <div class="item item-image">
             <img class="image2" src="../images/internet-4463031_960_720.webp" class="image-home" />
@@ -43,7 +51,7 @@
         </div>
         <div>
             <h2> Qui sommes nous</h2>
-            <p class="para1"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem est eveniet at quidem labore, distinctio deserunt neque eius inventore iste amet cupiditate cum necessitatibus sed et maxime. Et, vero maiores?</p>
+            <p class="para1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Dolores eum animi non distinctio assumenda at nam nisi quae ipsa esse atque sit porro corporis expedita nulla recusandae in, qui odio! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem est eveniet at quidem labore, distinctio deserunt neque eius inventore iste amet cupiditate cum necessitatibus sed et maxime. Et, vero maiores?</p>
         </div>
     </section>
 
@@ -68,25 +76,36 @@
 
         <div id="formulaire">
             <h2> Contactez Nous</h2>
-            <form action="post">
+            <form id="form" action="post">
                 <label for="text">Nom</label>
                 <input type="text">
-                <br>
-                <br>
-                <label for="text">Prenoms</label>
-                <input type="text" name="chat" id="drone">
-                <input type="submit" value="Envoyer">
+                <label for="prenom">Prénom</label> 
+                <input type="text"> <br><br>
+                <label for="commentaires">Commentaires</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
 
             </form>
+            
         </div>
         <div id="carte"></div>
 
        
     </section>
     <footer >
-        <div> ouiiii</div>
-        <div>non</div>
+        <div>
+            <img  class="image3" src="../images/Radtek (2).png" alt="">
+        </div>
+        <div id="icone">
+
+            <a target="new" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+           <a target="new" href="#"><i class="fab fa-twitter-square"></i></a>
+           <a target="new" href="#"><i class="fab fa-linkedin"></i></a>
+
+
+        </div>
     </footer>
+
+
 
     <script src="../js/main.js"></script>
 </body>

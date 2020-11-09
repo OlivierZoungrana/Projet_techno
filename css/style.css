@@ -5,30 +5,77 @@
     box-sizing: border-box;
 }
 
+#navbar ul {
+
+    list-style: none;
+  
+}
+ #navbar ul li a{
+       text-decoration: none;
+       margin: 0 50px;
+       
+ }
+
+ 
+ #navbar ul li{
+     display: inline;
+    align-items: flex-end;
+ }
+
+ #navbar a{
+
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+ }
+
+ header{
+   height: 400px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    z-index: 10;
+    flex-direction: row;
+  background-color: gainsboro;
+
+}
+
+.logo1{
+
+    width: 250px;
+    height: 250px;
+ }
+
+
+#acceuil{
+
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
 
 
 #about {
 
     display: flex;
-    width: 100%;
-    height:400px ;
     position: relative;
     justify-content: space-around;
     align-content: center;
     margin: auto;
-    flex-wrap: wrap;
     align-items: center;
     background-color: azure;
 }
 
-    .conteneur{
+ .conteneur{
         width: 400px;
         height: 350px;
 
     }
-
-
-
 
 
 #image2{
@@ -45,22 +92,15 @@
 }
 
 
-h2{
-
-    text-align: center;
-}
 
 
 .para1{
 
-    border: 1px solid black;
     text-align: center;
-    height: 290px;
-    width: 800px;
     position: relative;
     margin-right: auto;
     padding-top: -20px;
-    background-color: beige;
+   
 
 }
 
@@ -134,6 +174,11 @@ h2{
    
 }
 
+#form{
+
+  display: grid;
+}
+
 #carte{
 
     width: 500px;
@@ -146,60 +191,13 @@ h2{
 footer{
     width: 100%;
     height: 100px;
-    background-color: blueviolet;
     position: relative;
     display: flex;
     top: 250px;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: ghostwhite;
 }
-
-
-#acceuil{
-
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: antiquewhite;
-  
-}
-
-header{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    align-items: center;
-    z-index: 10;
-    background-color: rgb(214, 207, 207);
-
-}
-
-#navbar ul {
-
-    list-style: none;
-  
-}
- #navbar ul li a{
-       text-decoration: none;
-       margin: 0 50px;
-       font-size: ;
- }
-
- .logo1{
-
-    width: 250px;
-    height: 250px;
- }
- #navbar ul li{
-     display: inline;
-     align-items: flex-end;
- }
-
- #navbar a{
-
-    font-size: 30px;
- }
 
  .image2{
 
@@ -207,3 +205,151 @@ header{
     height: 400px;
  }
  
+ .image3{
+
+    width: 100px;
+    height: 100px;
+ }
+
+ .fa-facebook-square{
+
+    width: 50px;
+    height: 50px;
+ }
+
+ #icone i{
+
+    margin: 0 40px;
+ }
+
+ h1{
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+ }
+
+ p{
+    font-family: 'Dosis', sans-serif;
+
+ }
+
+ h2{
+
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+      display: none;
+    }
+  
+    #navbar li {
+      display: block;
+    }
+  
+    #navbar.is-visible {
+      display: block;
+    }
+  
+    #navbar a {
+      display: block;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      padding: 10px 0;
+      font-size: 1.2em;
+    }
+  
+    a:hover {
+      font-size: 20pt; /* essayes avec 120% ca peut peut-être marché */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+   
+    #toogle_btn {
+      height: 30px;
+      width: 30px;
+      position: relative;
+      float: right;
+      margin-right: 10px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  
+    #toogle_btn span {
+      height: 3px;
+      background-color: rgb(37, 30, 21);
+      width: 100%;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+  
+    #toogle_btn span::before {
+      content: "";
+      height: 3px;
+      background-color: rgb(48, 43, 37);
+      width: 100%;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+  
+    #toogle_btn span::after {
+      content: "";
+      height: 3px;
+      background-color: rgb(41, 34, 25);
+      width: 100%;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+
+    #acceuil{
+
+        display: block;
+    }
+
+    #about{
+    display: block;
+    align-content: flex-start;
+    }
+
+    .carousel-container{
+
+        width: 50%;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        justify-content:flex-start;
+        align-items: center;
+        top: 100px;
+        
+  }
+
+  #image2{
+      width: 100%;
+      height: 200px;
+
+  }
+
+  header{
+      flex-direction: row-reverse;
+      height: 400px;
+      width: 100%;
+  }
+
+ .is-visible{
+
+ position: absolute;
+
+  top: 250px;
+  left: 5px;
+  background-color: beige;
+ }
+
+  
+}
+
