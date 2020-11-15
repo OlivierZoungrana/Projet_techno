@@ -31,7 +31,7 @@
 
  a:hover {
   font-size: 20pt; 
-  color: #ffbd4a;
+
   /* essayes avec 120% ca peut peut-être marché */
 }
 
@@ -46,7 +46,7 @@
     align-items: center;
     z-index: 10;
     flex-direction: row;
-  background-color:#1cb6fd;
+    background-color:#1cb6fd;
 
 }
 
@@ -204,7 +204,7 @@ footer{
     top: 250px;
     justify-content: space-around;
     align-items: flex-end;
-    background-color: #131579;
+    background-color: #aaaab9;
 }
 
  .imageaAcceuil{
@@ -221,8 +221,9 @@ footer{
 
  .fa-facebook-square{
 
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    color: #431fc5;
  }
 
  #icone i{
@@ -610,7 +611,7 @@ a:hover {
     width: 100%;
     }
 
-    .carousel-container{
+.carousel-container{
 
         width: 100%;
         height: 400px;
@@ -641,17 +642,8 @@ a:hover {
       flex-direction: row;
       height: 400px;
       width: 100%;
+ 
   }
-
- .is-visible{
-
-  position: absolute;
-  height: 200px;
-  width: 100%;
-  top: 400px;
-  left: 5px;
-  background-color:#ffbd4a;
- }
 
  #contacts{
 
@@ -709,38 +701,13 @@ h1{
   display: inline;
 }
 
-#navbar.is-visible {
-  display: block;
-}
 
 #navbar a {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   padding: 10px 0;
-  font-size: 1.2em;
-}
-
-a:hover {
-  font-size: 20pt; /* essayes avec 120% ca peut peut-être marché */
-}
-
-
-
-#navbar li {
-  display: block;
-}
-
-#navbar.is-visible {
-  display: block;
-}
-
-#navbar a {
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 a:hover {
